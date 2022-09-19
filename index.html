@@ -1,35 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform
-  </p>
-  <form action="" id="survey-form">
-    <label for="name" id="name-label">Name</label>
-    <input type="text" id="name" value="Name" placeholder="Enter your Name">
-    <label for="email" id="email-label">Email</label>
-    <input type="email" name="" id="email" placeholder="Enter your email">
-    <label for="number" id="number-label">Number</label>
-    <input type="number" name="" id="number" max="10" min="1" placeholder="Age">
-    <select name="" id="drop-down">
-      <option value=""></option>
-      <option value=""></option>
-    </select>
-    <button type="radio" name="on">Maybe</button>
-    <button type="radio" name="on">notsure</button>
-    <select name="first" id="favourite" class="favouriteclass">
-      <option value="firstoption">first option</option>
-      <option value="secondoption">Second option</option>
-      <option value="thirdoption">third Option</option>
-    </select>
-    <textarea name="text" id="" cols="30" rows="10">Textarea</textarea>
-    <button type="button">submit</button>
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form action="" id="survey-form" class="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            value="Name"
+            class="full_width"
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            class="full_width"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Number</label>
+          <input
+            type="number"
+            name=""
+            id="number"
+            max="10"
+            class="full_width"
+            min="1"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>which option best describes your current role?</p>
+          <select
+            name="first"
+            class="full_width"
+            id="favourite"
+            class="favouriteclass"
+          >
+            <option value="firstoption">first option</option>
+            <option value="secondoption">Second option</option>
+            <option value="thirdoption">third Option</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+            <input
+              type="radio"
+              name="first_option"
+              id="input-radio"
+              class="input_radio"
+              checked
+            />
+            Definetly
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="first_option"
+              id="input-radio_2"
+              class="input_radio"
+            />
+            Maybe
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="first_option"
+              id="input-radio_3"
+              class="input_radio"
+            />
+            Not sure
+          </label>
+        </div>
+        <div class="form-group">
+          <select name="first" id="favourite" class="favouriteclass">
+            <option value="firstoption">first option</option>
+            <option value="secondoption">Second option</option>
+            <option value="thirdoption">third Option</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What would like to see improved? (Check all that apply)</p>
+          <label>
+            <input
+              type="checkbox"
+              value="time_management"
+              name="check_box-input"
+              id="check_box_1"
+            />
+            Time management
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value="memory_management"
+              name="check_box-input"
+              id="check_box_2"
+            />
+            Memory management
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value="economy_management"
+              name="check_box-input"
+              id="check_box_3"
+            />
+            Economy management
+          </label>
+        </div>
+        <textarea name="text" id="" cols="30" rows="10">Textarea</textarea>
+        <button type="button">submit</button>
+      </form>
+    </div>
+  </body>
 </html>
